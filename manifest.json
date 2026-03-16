@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "De-Vendor",
+  "version": "3.0",
+  "description": "Auto reject those long cookie banners Vendor Preferences",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
+
+//Fuck Vendor Preferences
